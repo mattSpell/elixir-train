@@ -35,8 +35,5 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :elixir_train, ElixirTrain.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "elixir_train_dev",
-  hostname: "localhost",
-  pool_size: 10
+  url: "postgres://e_train:MxD7STDgGgy8Cn@localhost:5432/e_train_dev",
+  pool_size: 20

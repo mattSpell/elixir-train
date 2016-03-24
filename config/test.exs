@@ -12,8 +12,5 @@ config :logger, level: :warn
 # Configure your database
 config :elixir_train, ElixirTrain.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "elixir_train_test",
-  hostname: "localhost",
+  url: "postgres://e_train:MxD7STDgGgy8Cn@localhost:5432/e_train_test",
   pool: Ecto.Adapters.SQL.Sandbox
